@@ -87,3 +87,20 @@
     ```
 
 5. 透過 `HttpContext.Features.Get<IRequestCultureFeature>()!.RequestCulture` 可以取得目前選中的 Culture 資訊
+
+## 相關連結
+
+- [ASP.NET Core 全球化和當地語系化](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/localization?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686) (老實說，這部分的官方文件寫的真是爛)
+  - [讓 ASP.NET Core 應用程式的內容可當地語系化](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/localization/make-content-localizable?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+  - [在 ASP.NET Core 應用程式中提供語言和文化特性的當地語系化資源](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/localization/provide-resources?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+  - [在當地語系化的 ASP.NET Core 應用程式中實作可依據每項要求選取語言/文化特性的策略](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/localization/select-language-culture?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+  - [使用 ASP.NET Core 設定可攜式物件當地語系化](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/portable-object-localization?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+  - [當地語系化擴充性](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/localization-extensibility?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+  - [針對 ASP.NET Core 當地語系化進行疑難排解](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/troubleshoot-aspnet-core-localization?view=aspnetcore-8.0&WT.mc_id=DT-MVP-4015686)
+ 
+## 範例程式
+
+- [Localization](https://github.com/dotnet/aspnetcore/tree/release/8.0/src/Middleware/Localization)
+
+   這裡有許多相當不錯的進階範例！👍
+
