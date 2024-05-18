@@ -26,7 +26,7 @@
     });
     ```
 
-    設定 Middleware
+    請安排在在 Endpoint Middleware 之前，也就是所有 `app.Map*()` 的這堆之前
 
     ```cs
     app.UseRequestLocalization();
@@ -57,6 +57,8 @@
    ```
    /Resources/Views/Home/Privacy*.resx
    ```
+
+   若有模型類別，裡面的驗證屬性如果有有訊息字串，也是相同的設定方式。
    
 4. 建構式注入 `IStringLocalizer<T>`
 
@@ -69,6 +71,19 @@
         _logger = logger;
         _localizer = localizer;
     }
+    ```
+
+5. 透過 View (`*.cshtml`) 注入
+
+    ```cs
+    @inject IViewLocalizer Localizer
+    ```
+
+    建議也可以在 `/Views/_ViewImports.cshtml` 加入：
+
+
+    ```cs
+    @using Microsoft.AspNetCore.Mvc.Localization
     ```
 
 5. 透過 `HttpContext.Features.Get<IRequestCultureFeature>()!.RequestCulture` 可以取得目前選中的 Culture 資訊
