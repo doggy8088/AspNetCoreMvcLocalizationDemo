@@ -17,12 +17,13 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
         {
             new CultureInfo("zh-TW"),
             new CultureInfo("en"),
+            new CultureInfo("ja"), // Added Japanese as a supported culture
         };
     options.DefaultRequestCulture = new RequestCulture(currentCulture);
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 
-    // ¦b¦^À³¼ÐÀY¤¤¥[¤J Content-Language ¼ÐÀY¡A§iª¾¥Î¤áºÝ¦¹¥÷ HTTP ¤º®eªº»y¨¥¬°¦ó
+    // ï¿½bï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½[ï¿½J Content-Language ï¿½ï¿½ï¿½Yï¿½Aï¿½iï¿½ï¿½ï¿½Î¤ï¿½Ý¦ï¿½ï¿½ï¿½ HTTP ï¿½ï¿½ï¿½eï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     options.ApplyCurrentCultureToResponseHeaders = true;
 });
 
