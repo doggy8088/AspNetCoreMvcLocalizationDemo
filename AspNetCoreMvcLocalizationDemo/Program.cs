@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Localization;
+ï»¿using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 
@@ -22,7 +22,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 
-    // ¦b¦^À³¼ÐÀY¤¤¥[¤J Content-Language ¼ÐÀY¡A§iª¾¥Î¤áºÝ¦¹¥÷ HTTP ¤º®eªº»y¨¥¬°¦ó
+    // åœ¨å›žæ‡‰æ¨™é ­ä¸­åŠ å…¥ Content-Language æ¨™é ­ï¼Œå‘ŠçŸ¥ç”¨æˆ¶ç«¯æ­¤ä»½ HTTP å…§å®¹çš„èªžè¨€ç‚ºä½•
     options.ApplyCurrentCultureToResponseHeaders = true;
 });
 

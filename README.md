@@ -1,4 +1,4 @@
-# ASP.NET Core 8 MVC 多國語系範例
+﻿# ASP.NET Core 8 MVC 多國語系範例
 
 加入多國語系資源大概有以下幾個步驟：
 
