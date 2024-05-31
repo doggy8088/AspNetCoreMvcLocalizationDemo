@@ -17,6 +17,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
         {
             new CultureInfo("zh-TW"),
             new CultureInfo("en"),
+            new CultureInfo("ja"), // Added Japanese as a supported culture
         };
     options.DefaultRequestCulture = new RequestCulture(currentCulture);
     options.SupportedCultures = supportedCultures;
